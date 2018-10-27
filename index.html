@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book Tour - The Epic Fail of Arturo Zamora</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- CSS Links -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Boogaloo|Sigmar+One" rel="stylesheet">
+
+	<!-- JS/jQuery Links -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div id="form">
+		<center>
+			<h1>Book Tour</h1>
+			<p>In this book tour you will learn about different places and characters that come out in the book <a href="https://books.google.com/books?id=9uLkDAAAQBAJ&printsec=frontcover&dq=the+epic+fail+of+arturo+zamora&hl=en&sa=X&ved=0ahUKEwiZ6vXl-5DeAhUKIqwKHeH9DTQQ6AEIKTAA#v=onepage&q=the%20epic%20fail%20of%20arturo%20zamora&f=false" target="_blank">The Epic Fail of Arturo Zamora by Pablo Cartaya</a>. You must fill out the form below to enter (doesn't have to be real). You have $100 to start your adventure, so use them wisely!</p>
+		</center>
+
+		<hr>
+
+		<h3>Fill out the form below to enter:</h3>
+
+		<p>
+			Nickname:<br>
+			<input type="text" class="text" id="nickname" placeholder="Bob">
+		</p>
+		<p>
+			Age:<br>
+			<input type="number" class="text" id="age" placeholder="13">
+		</p>
+		<p>
+			Gender (M or F):<br>
+			<input type="text" class="text" id="gender" placeholder="M">
+		</p>
+		<p>
+			Your budget is $100. Use them wisely!<br>
+		</p>
+		<p>
+			<button id="enterTour">Enter Tour</button>
+		</p>
+	</div>
+
+	<div id="next" style="display: none">
+		<center>
+			<h1 id="profile"></h1>
+			<p id="budget"></p>
+			<p id="avatar"></p>	
+		</center>
+
+		<hr>
+
+		<h3>Find out Places</h3>
+
+		<div class="list">
+			<div class="link">
+				<a href="#lacocina" id="LaCocina">
+					<img src="./img/la-cocina.jpg" alt="Image" width="100%">
+					<h3>La Cocina de la Isla</h3>
+					<p>Restaurant</p>
+				</a>
+			</div>
+
+			<div class="link">
+				<a href="#twoscoops" id="TwoScoops">
+					<img src="./img/two-scoops.jpg" alt="Image" width="100%">
+					<h3>Two Scoops</h3>
+					<p>Ice Cream Place</p>
+				</a>
+			</div>
+
+			<div class="link">
+				<a href="#pipooffice" id="PipoOffice">
+					<img src="./img/office.jpg" alt="Image" width="50%">
+					<h3>Wilfrido Pipo's Office</h3>
+					<p>Office</p>
+				</a>
+			</div>
+
+			<div class="link">
+				<a href="#citycouncil" id="CityCouncil">
+					<img src="./img/city-council.jpg" alt="Image" width="100%">
+					<h3>City Council</h3>
+					<p>Canal Grove, FL</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="lacocina" style="display: none;">
+		<h1>La Cocina de la Isla</h1>
+		<h4>What would you like to do?</h4>
+
+		<div class="list">
+			<div class="link">
+				<a href="#next" id="eatLaCocina">
+					<img src="./img/eat.jpg" alt="Image" width="100%">
+					<h3>Eat</h3>
+					<p>Cost: -$20</p>
+				</a>
+			</div>
+
+			<div class="link">
+				<a href="#next" id="workLaCocina">
+					<img src="./img/work.jpg" alt="Image" width="100%">
+					<h3>Work</h3>
+					<p>Cost: +$30</p>
+				</a>
+			</div>
+
+			<div class="link">
+				<a href="#next" id="partyLaCocina">
+					<img src="./img/party.jpg" alt="Image" width="100%">
+					<h3>Party</h3>
+					<p>Cost: -$50</p>
+				</a>
+			</div>
+
+			<div class="link">
+				<a href="#next" id="goBack1">
+					<img src="./img/back.jpg" alt="Image" width="100%">
+					<h3>Go Back</h3>
+					<p>Cost: $0</p>
+				</a>
+			</div>
+		</div>
+
+		<hr>
+
+		<h5>** EXACT DATES ARE NOT PROVIDED BY THE BOOK **</h5>
+
+		<ul class="timeline">
+	        <li>
+	          <div class="timeline-badge"><i class="glyphicon glyphicon-time"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">19 years ago - Est. La Cocina</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>
+	              	19 years ago when the Mr. Merritt, a big customer of Veronica Zamora, passed away, he left some money for her. With it Veronica Zamora established the restaurant of La Cocina de la Isla.
+	              </p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge warning"><i class="glyphicon glyphicon-time"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">Every Sunday - Sunday Family Dinner</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>
+	              	Every Sunday evenings, all of the Zamoras gather up in the restaurant to have a family dinner with every member in the family. This included Arturo Zamora's (main character) grandparents, cousins, aunts, uncles, and even friends. In this time the family prayed, ate, and discussed about their business.
+	              </p>
+	            </div>
+	          </div>
+	        </li>
+	        <li>
+	          <div class="timeline-badge danger"><i class="glyphicon glyphicon-time"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">Beginning of Summer - Arturo Zamora is Hired</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>
+	              	In the beginning of summer break, Arturo Zamora (7th grade) was hired as the dishwasher of La Cocina to earn money. He is going to be under the control of Martin Zamora in the kitchen. 
+	              </p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge danger"><i class="glyphicon glyphicon-time"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">Middle of Summer - Puts on a bid for the Lot</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>
+	              	This summer, La Cocina put a bid for the lot next to the restaurant to expand the dining space. The city is going to sell the property to the winner, and so far nobody except for this restaurant applied.
+	              </p>
+	            </div>
+	          </div>
+	        </li>
+	        <li>
+	          <div class="timeline-badge info"><i class="glyphicon glyphicon-time"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">Middle of Summer - Wilfrido Pipo puts in a Bid</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>
+	              	Shortly after his arrival to Canal Grove, Florida, Wilfrido Pipo, CEO of Pipo Land Holdings, LLC, placed a bid for the lot next to La Cocina. He wanted to build a luxury apartment called Pipo Place with various entertainment and grocery.
+	              </p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge danger"><i class="glyphicon glyphicon-time"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">End of Summer - Veronica Zamora's Memorial Dinner</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>
+	              	After the death of Veronica Zamora, Cari Zamora (Veronica's daughter) decided to host a memorial dinner, remebering what Veronica Zamora did to this community, and how it impacted the city.
+	              </p>
+	            </div>
+	          </div>
+	        </li>
+	    </ul>
+	</div>
+
+	<div id="twoscoops" style="display: none;">
+		<h1>Two Scoops</h1>
+		<h4>What would you like to do?</h4>
+
+		<div class="list">
+			<div class="link">
+				<a href="#next" id="eatTwoScoops">
+					<img src="./img/eat.jpg" alt="Image" width="100%">
+					<h3>Eat</h3>
+					<p>Cost: -$5</p>
+				</a>
+			</div>
+
+			<div class="link">
+				<a href="#next" id="workTwoScoops">
+					<img src="./img/work.jpg" alt="Image" width="100%">
+					<h3>Work</h3>
+					<p>Cost: +$15</p>
+				</a>
+			</div>
+
+			<div class="link">
+				<a href="#next" id="goBack2">
+					<img src="./img/back.jpg" alt="Image" width="100%">
+					<h3>Go Back</h3>
+					<p>Cost: $0</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="pipooffice" style="display: none;">
+		<h1>Wilfrido Pipo's Office</h1>
+		<h4>What would you like to do?</h4>
+
+		<div class="list">
+			<div class="link">
+				<a href="#next" id="enjoyPipoOffice">
+					<img src="./img/party.jpg" alt="Image" width="100%">
+					<h3>Enjoy the Party</h3>
+					<p>Cost: -$5</p>
+				</a>
+			</div>
+
+			<div class="link">
+				<a href="#next" id="goBack3">
+					<img src="./img/back.jpg" alt="Image" width="100%">
+					<h3>Go Back</h3>
+					<p>Cost: $0</p>
+				</a>
+			</div>
+		</div>
+
+		<hr>
+
+		<h5>** EXACT DATES ARE NOT PROVIDED BY THE BOOK **</h5>
+
+		<ul class="timeline">
+	        <li>
+	          <div class="timeline-badge"><i class="glyphicon glyphicon-time"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">Middle of Summer - W. Pipo Arrive @ Canal Grove</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>
+	              	With experience of building Pipo Place in more than 5 cities, Wilfrido Pipo this time visited Canal Grove to establish Pipo Place again. He planned to put in a bid for the lot next to La Cocina and build the building there.
+	              </p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge warning"><i class="glyphicon glyphicon-time"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">Middle of Summer - Hosts Parties & Catered Lunches</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>
+	              	To advertise for his Pipo Place, Wilfrido Pipo has hosted a lot of parties for people and special catered lunch for nearby businesses. In those parties and lunches he presented his plan of how Pipo Place will look, have, and how it will benefit them.
+	              </p>
+	            </div>
+	          </div>
+	        </li>
+	        <li>
+	          <div class="timeline-badge danger"><i class="glyphicon glyphicon-time"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">End of Summer - Hosts a Big Party</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>
+	              	Only a few days before the vote, W. Pipo again hosted a party for everyone in the neighborhood, giving out free food, gifts, and making speeches to persuade people to support Pipo Place. In this event La Cocina is worried and gives out flyers that persuades people to support them. 
+	              </p>
+	            </div>
+	          </div>
+	        </li>
+	        <li class="timeline-inverted">
+	          <div class="timeline-badge danger"><i class="glyphicon glyphicon-time"></i></div>
+	          <div class="timeline-panel">
+	            <div class="timeline-heading">
+	              <h4 class="timeline-title">End of Summer - W. Pipo Leaves Canal Grove</h4>
+	            </div>
+	            <div class="timeline-body">
+	              <p>
+	              	After hearing about the results of the vote held a few days ago, Wilfrido Pipo, CEO of Pipo Land Holdings, LLC, decided to leave Canal Grove and find another place to establish yet another Pipo Place. Will he succeed this time?
+	              </p>
+	            </div>
+	          </div>
+	        </li>
+	    </ul>
+	</div>
+
+	<div id="citycouncil" style="display: none;">
+		<h1>City Council</h1>
+		<h4>Make your Choice! Vote for One!</h4>
+
+		<div class="list">
+			<div class="link">
+				<a href="#next" id="voteLC">
+					<img src="./img/eat.jpg" alt="Image" width="50%">
+					<h3>La Cocina</h3>
+					<p>A family restaurant with 19 years of history.</p>
+					<p>"Pipo doesn't know about family; all he cares about is money!"</p>
+				</a>
+			</div>
+
+			<div class="link">
+				<a href="#next" id="votePP">
+					<img src="./img/eat.jpg" alt="Image" width="50%">
+					<h3>Pipo Place</h3>
+					<p>A luxury apartment with lots of entertainment.</p>
+					<p>"Family can't save you. Only money can. So vote for us!"</p>
+				</a>
+			</div>
+
+			<div class="link">
+				<a href="#next" id="goBack4">
+					<img src="./img/back.jpg" alt="Image" width="100%">
+					<h3>Go Back</h3>
+					<p>Cost: $0</p>
+				</a>
+			</div>
+		</div>
+
+		<p id="results"></p>
+	</div>
+
+	<center>
+		<h2>
+			<a href="#form" id="endTour">END TOUR</a>
+		</h2>
+	</center>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
