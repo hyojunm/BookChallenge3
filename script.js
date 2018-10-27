@@ -194,6 +194,7 @@ $("#goBack3").click(function() {
 function goBack4() {
 	$("#next").show();
 	$("#citycouncil").hide();
+	$("#results").html("");
 }
 
 $("#goBack4").click(function() {
