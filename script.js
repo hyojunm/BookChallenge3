@@ -206,6 +206,7 @@ function endTour() {
 		$("#lacocina").hide();
 		$("#twoscoops").hide();
 		$("#pipooffice").hide();
+		$("#citycouncil").hide();
 		$("#form").show();
 	} else {
 		alert("You have a budget of $" + budget + ". Please pay off your loan before you quit the tour.")
