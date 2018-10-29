@@ -221,10 +221,10 @@ $("#endTour").click(function() {
 function vote(vote) {
 	if (vote == true) {
 		alert("La Cocina wins the Vote!");
-		$("#results").html("<hr>With La Cocina, your favorite restaurant, winning the vote, you can now go and eat without any waiting because of more dining space. The parties you host here is extra fun with more space! Since the restaurant can earn more money and people can eat more quickly, it's a win-win!")
+		$("#results").html("<hr><h3>Results:</h3>With La Cocina, your favorite restaurant, winning the vote, you can now go and eat without any waiting because of more dining space. The parties you host here is extra fun with more space! Since the restaurant can earn more money and people can eat more quickly, it's a win-win!")
 	} else if (vote == false) {
 		alert("Pipo Place wins the Vote!");
-		$("#results").html("<hr>Pipo Place starts the construction as soon as the results are out. The loud machine noises disturbs your nice evening nap, and the huge building covers up the sunset you used the see every night. You try to move in the apartment, but after looking at the cost, you decide not to. Now Pipo Place is left alone with nobody living in it.");
+		$("#results").html("<hr><h3>Results:</h3>Pipo Place starts the construction as soon as the results are out. The loud machine noises disturbs your nice evening nap, and the huge building covers up the sunset you used the see every night. You try to move in the apartment, but after looking at the cost, you decide not to. Now Pipo Place is left alone with nobody living in it.");
 	}
 }
 
